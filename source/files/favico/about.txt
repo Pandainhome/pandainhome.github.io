@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Alike
+- Font Author: Copyright 2009 The Alike Project Authors (https://github.com/cyrealtype/Alike) with Reserved Font Name "Alike" and "Alike Angular".
+- Font Source: https://fonts.gstatic.com/s/alike/v21/HI_EiYEYI6BIoEjBSZXAQ4-d.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
