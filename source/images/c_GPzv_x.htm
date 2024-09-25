@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Сеть кофеен «Шоколадница»</title>
+	<meta name="description" content="Та самая «Шоколадница» - заказать быструю доставку от 30 минут. Кофе собственной обжарки, легендарные блинчики, изысканные десерты из натуральных продуктов и разнообразное меню сытных завтраков, ланчей и ужинов - то, чем славятся кофейни «Шоколадница»." />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/local/templates/shoko/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/local/templates/shoko/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/local/templates/shoko/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/local/templates/shoko/favicon/site.webmanifest?1">
+	<link rel="mask-icon" href="/local/templates/shoko/favicon/safari-pinned-tab.svg" color="#333333">
+	<meta name="msapplication-TileColor" content="#cccccc">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="format-detection" content="telephone=no"> 
+
+	<meta name="yandex-verification" content="6092b55729efcfa4" />
+
+	
+
+
+	<link href="/bitrix/cache/css/s3/shoko/page_2353290f7c43266ce9059ad1195565fc/page_2353290f7c43266ce9059ad1195565fc_v1.css?172072913120684" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s3/shoko/template_b26e208d2f2e667bcc917571dbbed3a3/template_b26e208d2f2e667bcc917571dbbed3a3_v1.css?1724318946568702" type="text/css"  data-template-style="true" rel="stylesheet" />
+	<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1698959452219752"></script>
+
+<script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+</script>
+<script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'N','pull_config_timestamp':'0','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s3','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1726056410','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'96e41c8a6c5abd7d516ece81eeb90698'});</script>
+
+
+<script type="text/javascript"  src="/bitrix/cache/js/s3/shoko/kernel_main/kernel_main_v1.js?172072928290267"></script>
+<script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.min.js?165692282076433"></script>
+<script type="text/javascript" src="/bitrix/js/pull/protobuf/model.min.js?165692282014190"></script>
+<script type="text/javascript" src="/bitrix/js/rest/client/rest.client.min.js?16569228219240"></script>
+<script type="text/javascript" src="/bitrix/js/pull/client/pull.client.min.js?169895941948309"></script>
+<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-2.2.4.min.js?165865711085578"></script>
+<script type="text/javascript" src="//api-maps.yandex.ru/2.1/?lang=ru-RU&apikey=54345436-d334-4b45-96f2-b7778ea9bb04"></script>
+<script type="text/javascript" src="/bitrix/js/yandex.metrika/script.js?16702458346591"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/pageobject/pageobject.js','/bitrix/js/main/core/core_window.js','/local/js/site/fancybox.umd.js','/local/js/site/tooltip.js','/local/js/site/isotope.pkgd.min.js','/local/js/site/order.type.js','/local/js/site/auth.form.js','/local/js/site/product.detail.js','/local/js/site/script.js','/local/js/site/jquery.lazy.min.js','/local/js/site/swiper-bundle.min.js','/local/components/sf/header/templates/.default/script.js','/local/components/sf/search/templates/.default/script.js','/local/components/sf/cookies.policy/templates/.default/script.js']);</script>
+<script type="text/javascript">BX.setCSSList(['/local/components/sf/stories/templates/_.default/style.css','/local/components/sf/sliders/templates/.default/style.css','/local/components/sf/catalog/templates/.default/style.css','/local/css/site/style.css','/local/css/site/custom.css','/local/css/site/fancybox.css','/local/css/site/order.type.css','/local/css/site/product.detail.css','/local/components/sf/header/templates/.default/style.css','/local/components/sf/search/templates/.default/style.css','/local/components/sf/cookies.policy/templates/.default/style.css','/local/templates/shoko/styles.css','/local/templates/shoko/template_styles.css']);</script>
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                (function (m, e, t, r, i, k, a) {
+                    m[i] = m[i] || function () {
+                        (m[i].a = m[i].a || []).push(arguments)
+                    };
+                    m[i].l = 1 * new Date();
+                    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+                })
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                ym("90032108", "init", {
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: false,
+                    ecommerce: "dataLayer",
+                    params: {
+                        __ym: {
+                            "ymCmsPlugin": {
+                                "cms": "1c-bitrix",
+                                "cmsVersion": "23.300",
+                                "pluginVersion": "1.0.7",
+                                'ymCmsRip': 1597463007                            }
+                        }
+                    }
+                });
+
+                document.addEventListener("DOMContentLoaded", function() {
+                                    });
+
+            </script>
+            <!-- /Yandex.Metrika counter -->
+                    <script type="text/javascript">
+            window.counters = ["90032108"];
+        </script>
+        
+<script type="text/javascript">
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s3");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s3")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<script>window.dataLayer = window.dataLayer || [];</script>
+
+
+
+	<script type="text/javascript"  src="/bitrix/cache/js/s3/shoko/template_0d2765c932f1398266c17ecc4d6cdfe1/template_0d2765c932f1398266c17ecc4d6cdfe1_v1.js?1723730107428737"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d7154e65febabea2dcc65096f649cf84"]); _ba.push(["host", "shoko.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+	
+	
+<script type="text/javascript">
+	let city_coordinates = [55.753709, 37.622145];
+	let map_zoom = 10;
+	let SITE_DIR = "/";
+
+	let pin_mask = "/local/templates/shoko/images/pin_mask.svg";
+	let pin = "/local/templates/shoko/images/pin.svg?1";
+	let pin_selected = "/local/templates/shoko/images/pin_selected.svg?3";
+	let pin_closed = "/local/templates/shoko/images/pin_closed.svg";
+	let pin_checked = "/local/templates/shoko/images/pin_checked.svg";
+</script></head>
+<body>
+
+
+<div>
+   <input type="checkbox" class="custom-header__input" id="menu-burger">
+   <div class="main-container">
+
+   		   		<header class="header custom-header">
+	   			   			
+<div class="brands-header">
+    <div class="brands-header__content">
+        <picture>
+            <source srcset="/local/images/header/mobile.png?7" media="(max-width: 768px)">
+            <source srcset="/local/images/header/desktop.png?7">
+            <img srcset="/local/images/header/desktop.png?7">
+        </picture>
+        <div class="brands-header__close"></div>
+    </div>
+</div>	   				   <div class="header__block custom-header__block">
+		      <div class="custom-header__blocks-line custom-header__blocks-line_top">
+		         <div class="header__logo">
+		            <a class="custom-header__logo" href="/">
+		               <picture>
+		                  <img src="/local/templates/shoko/images/logo2024.svg">
+		               </picture>
+		            </a>
+		         </div>
+		         <div class="rc-collapse collapse">
+		            <div class="rc-collapse-item collapse collapse_brand" style='display: block;' >
+		               <div class="rc-collapse-header" aria-expanded="false" role="tab" tabindex="0">
+		                  <span class="rc-collapse-header-text brand-popup">Изменить бренд</span>
+		               </div>
+		               <div class="rc-collapse-content" role="tabpanel">
+		               	<div class="rc-collapse-content-box">
+		               				               		<div class="choose__item choose__item_brand choose__item_active">
+		               			<div class="choose__item-icon">
+		               				<picture>
+		               					<img src="/local/images/logo-min-shoko.svg">
+		               				</picture>
+		               			</div>
+		               			<div class="choose__item-info">
+		               				<div class="choose__item-name">Шоколадница</div>
+		               				<div class="choose__item-description">Завтраки и кофе</div>
+		               			</div>
+		               			<div class="choose__item-checker"></div>
+		               		</div>
+		               				               				               				               					               		<a href="https://eazzypizza.ru">
+			               		<div class="choose__item choose__item_brand">
+			               			<div class="choose__item-icon">
+			               				<picture>
+			               					<img src="/local/images/logo-min-eazzy.png">
+			               				</picture>
+			               			</div>
+			               			<div class="choose__item-info">
+			               				<div class="choose__item-name">Eazzy Pizza & Gelato</div>
+			               				<div class="choose__item-description">Римская пицца и джелато</div>
+			               			</div>
+			               			<div class="choose__item-checker"></div>
+			               		</div>
+			               		</a>
+		               				               				               					               		<a href="https://vabisabi.ru">
+			               		<div class="choose__item choose__item_brand">
+			               			<div class="choose__item-icon">
+			               				<picture>
+			               					<img src="/local/images/logo-min-vabisabi.svg">
+			               				</picture>
+			               			</div>
+			               			<div class="choose__item-info">
+			               				<div class="choose__item-name">ВАБИ САБИ</div>
+			               				<div class="choose__item-description">Японская кухня</div>
+			               			</div>
+			               			<div class="choose__item-checker"></div>
+			               		</div>
+			               		</a>
+		               				               				               					               		<a href="https://ramennaya.ru">
+			               		<div class="choose__item choose__item_brand">
+			               			<div class="choose__item-icon">
+			               				<picture>
+			               					<img src="/local/images/logo-min-ramennaya.svg">
+			               				</picture>
+			               			</div>
+			               			<div class="choose__item-info">
+			               				<div class="choose__item-name">Раменная</div>
+			               				<div class="choose__item-description">Экспресс раменная</div>
+			               			</div>
+			               			<div class="choose__item-checker"></div>
+			               		</div>
+			               		</a>
+		               				               				               					               		<a href="https://monkeyexpress.ru">
+			               		<div class="choose__item choose__item_brand">
+			               			<div class="choose__item-icon">
+			               				<picture>
+			               					<img src="/local/images/logo-min-monkeyexpress.png">
+			               				</picture>
+			               			</div>
+			               			<div class="choose__item-info">
+			               				<div class="choose__item-name">Monkey Express</div>
+			               				<div class="choose__item-description">Паназиатская кухня</div>
+			               			</div>
+			               			<div class="choose__item-checker"></div>
+			               		</div>
+			               		</a>
+		               				               				               					               		<a href="https://eazzywok.ru">
+			               		<div class="choose__item choose__item_brand">
+			               			<div class="choose__item-icon">
+			               				<picture>
+			               					<img src="/local/images/logo-min-eazzywok.png">
+			               				</picture>
+			               			</div>
+			               			<div class="choose__item-info">
+			               				<div class="choose__item-name">Eazzy Wok</div>
+			               				<div class="choose__item-description">Авторская лапша в коробочках</div>
+			               			</div>
+			               			<div class="choose__item-checker"></div>
+			               		</div>
+			               		</a>
+		               				               				               					               		<a href="https://eazzysushi.ru">
+			               		<div class="choose__item choose__item_brand">
+			               			<div class="choose__item-icon">
+			               				<picture>
+			               					<img src="/local/images/logo-min-eazzysushi.png">
+			               				</picture>
+			               			</div>
+			               			<div class="choose__item-info">
+			               				<div class="choose__item-name">Eazzy Sushi</div>
+			               				<div class="choose__item-description">Суши</div>
+			               			</div>
+			               			<div class="choose__item-checker"></div>
+			               		</div>
+			               		</a>
+		               				               				               	</div>
+		               </div>
+		            </div>
+		            <div class="rc-collapse-item collapse collapse_city city-form">
+		               <div class="rc-collapse-header" aria-expanded="false" role="tab" tabindex="0">
+		                  <div class="rc-collapse-expand-icon"><i class="arrow"></i></div>
+		                  <span class="rc-collapse-header-text">
+		                  	Москва		                  			               	</span>
+		               </div>
+		            </div>
+		         </div>
+		         <div class="custom-header__info">
+		            			            <div class="search-box search-b">
+	<div class="search-box__form">
+		<input class="search-box__input" type="text" name="" placeholder="Поиск"/>
+		<span class="search-box__input-remove"></span>
+	</div>
+	<div class="search-box__results">
+		<div class="search__results-header"></div>
+		<div class="search-box__results-body search-b__results-body">
+			<div class="search__results-content"></div>
+		</div>
+	</div>
+</div>		            		            <div class="custom-header__map order-type">
+		               <a class="custom-header__map-icon">
+		                  <picture><img alt="Способ получения" src="/local/images/map-icon.svg"></picture>
+		               </a>
+		               <div class="custom-header__map-text">
+		                  <div class="custom-header__map-text">
+		                     										Доставка или Заказ с собой											                  </div>
+		                  <div class="custom-header__map-text-choose" style='margin-top: 3px;'>
+		                                                	Выберите способ получения
+                           		                  </div>
+		               </div>
+		            </div>
+		            <div class="custom-header__profile">
+		               <a class="custom-header__profile-icon auth-form"  >
+		                  <picture><img alt="Личный кабинет" src="/local/images/lk-icon.svg"></picture>
+		               </a>
+		            </div>
+		            <div class="custom-header__cart" onClick="window.location='/cart';">
+		               <a class="custom-header__cart-icon">
+		                  <picture><img alt="Корзина" src="/local/images/cart-icon.svg"></picture>
+		               </a>
+		               <div class="custom-header__cart-text">
+		                  <div class="custom-header__cart-text-sum"><span class="cart__price">0</span></div>
+		                  <div class="custom-header__cart-text-quantity"><span class="cart__quantity">0</span> шт</div>
+		               </div>
+		            </div>
+		         </div>
+		         <!--
+		         <div class="custom-header__b">
+		         </div>
+		         <div class="custom-header__profile2">
+		         	<a class="auth-form"  >
+	                  <picture><img alt="Личный кабинет" src="/local/images/lk-icon.svg"></picture>
+	               </a>
+		         </div>
+		      	-->
+		         <label for="menu-burger" class="header__burger custom-header__burger">
+		            <p></p>
+		            <p></p>
+		            <p></p>
+		         </label>
+		      </div>
+		      <div class="custom-header__choose-getting">
+		         <div class="custom-header__choose-getting-icon order-type">
+		            <picture><img alt="Личный кабинет" src="/local/images/map-icon-2.svg"></picture>
+		         </div>
+		         <div class="custom-header__choose-getting-text order-type">
+		         									                              	Выберите способ получения заказа
+                  		         </div>
+		         		         <div class="search-mbox__show search-mbox__button"></div>
+		         		      </div>
+		      <div class="custom-header__blocks-line custom-header__blocks-line_bottom menu-header">
+		         <label for="menu-burger" class="header__wrapper custom-header__wrapper">
+		            <div class="header__content custom-header__content">
+		               <div class="custom-header__block-cl">
+		                  		                  	<div class="custom-header__profile-in auth-form">Войти</div>
+		                  		                  <div class="custom-header__location city-form">
+		                     <div class="custom-header__location-text">Ваш город: 
+		                     	Москва		                  				                     </div>
+		                     <div class="custom-header__location-arrow"></div>
+		                  </div>
+		               </div>
+		               <nav class="custom-menu">
+		                  <ul>
+		                  			                  	<li class="custom-menu__item custom-menu__item_active">
+		                     	<a class="custom-menu__item-link" href="/">Меню доставки</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/restaurants/">Рестораны</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/promotions/">Акции</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/bonuses/">Бонусы</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/business/">Для бизнеса</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/franchising/">Франчайзинг</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/about/">О компании</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/career/">Вакансии</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/blog/">Блог</a>
+		                     </li>	
+		                  			                  	<li class="custom-menu__item ">
+		                     	<a class="custom-menu__item-link" href="/contacts/">Контакты</a>
+		                     </li>	
+		                  			                  </ul>
+		               </nav>
+		            </div>
+		         </label>
+		      </div>
+		   </div>
+
+		</header>
+		
+      <div class="content-wrapper">
+<div class="container">
+			<head><script defer="" nomodule="" src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/webpack-264e67ae6f02a0c7.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/framework-4556c45dd113b893.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/main-f811326135c86b18.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/pages/_app-256308b4b02e66ea.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/737-44fcd9887ed52ca8.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/chunks/pages/index-1c984974034b4a10.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/v3xnHhOyGAGLA7691l3FV/_buildManifest.js" defer=""></script><script src="/local/components/sf/stories/templates/_.default/scripts/static/v3xnHhOyGAGLA7691l3FV/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div class="stories"><div class="stories__content"><div class="stories__carousel"><div class="stories__mask"><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{},"__N_SSG":true},"page":"/","query":{},"buildId":"v3xnHhOyGAGLA7691l3FV","isFallback":false,"gsp":true,"scriptLoader":[]}</script>	
+			
+<div class="special-offer-block">
+	<div class="special-offer-block__content">
+				<div class="carousel">
+			<div class="swiper swiper-carousel">
+				<div class="swiper-wrapper" data-slide="10">
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="110465">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/f55/05svdr5ws8u0t0ox365798q4x1h6qhpq.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/f55/05svdr5ws8u0t0ox365798q4x1h6qhpq.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/844/k4nlhe2ctr4v8a2wphdml2bt5w0w0w0b.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/844/k4nlhe2ctr4v8a2wphdml2bt5w0w0w0b.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/yubileynoe-menyu/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="111213">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/0f1/9khxbomau0rovteqnw64uq9l94hcs4c4.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/0f1/9khxbomau0rovteqnw64uq9l94hcs4c4.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/1c9/qblr7u8r0ywn25olc170t7g8i7tpzrv5.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/1c9/qblr7u8r0ywn25olc170t7g8i7tpzrv5.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/zakazyvayte-lyubimye-blyuda-i-napitki-v-telegram/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="103522">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/fa3/wy62ufsct3k4xjhmdigiyck9r5pfb5hy.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/fa3/wy62ufsct3k4xjhmdigiyck9r5pfb5hy.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/529/7eoclc8zvezr2214qi48m5o6hh8suo6n.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/529/7eoclc8zvezr2214qi48m5o6hh8suo6n.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/minus-20-na-samovynos/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="103583">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/7e8/ivcj3uie1qrwrd5mnux7tfzwneo090d3.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/7e8/ivcj3uie1qrwrd5mnux7tfzwneo090d3.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/abb/lo9daqslx6lt76lsvxaq5zwzx4sht5y5.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/abb/lo9daqslx6lt76lsvxaq5zwzx4sht5y5.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/kombozavtraki-/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="103584">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/963/msxx7pqr8p2jj7dm7bqgugk31a8phxxv.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/963/msxx7pqr8p2jj7dm7bqgugk31a8phxxv.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/1e6/rxfh912zrg133t8qvi5pqax0ikjcjij2.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/1e6/rxfh912zrg133t8qvi5pqax0ikjcjij2.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/lanch-/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="103585">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/9bd/cgb71l5bxnl3l30j7vbw86vdb2q5x9u1.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/9bd/cgb71l5bxnl3l30j7vbw86vdb2q5x9u1.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/678/y72ufvg9xho7izp1dpild6o5t7qcl43u.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/678/y72ufvg9xho7izp1dpild6o5t7qcl43u.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/uzhin-/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="2698">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/f3f/jdfa3aj3ie12t06v5d2yyx46tpksdf11.png" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/f3f/jdfa3aj3ie12t06v5d2yyx46tpksdf11.png" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/1f1/a5f6omuwewdus24538d6eybpnfvzos37.png" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/1f1/a5f6omuwewdus24538d6eybpnfvzos37.png">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title special-offer-block__item-title--light">&nbsp;</span>
+									<p class="special-offer-block__item-text special-offer-block__item-text--light"></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/abonement-na-napitki/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="86833">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/321/mu1l2o95wwmrq5i1wz45113gnp6lhzu0.jpg" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/321/mu1l2o95wwmrq5i1wz45113gnp6lhzu0.jpg" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/0f0/22v5tdaguttc878bv0exq446r8pqh27o.jpg" type="image/webp">
+										<img alt="&nbsp;" src="/upload/iblock/0f0/22v5tdaguttc878bv0exq446r8pqh27o.jpg">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">&nbsp;</span>
+									<p class="special-offer-block__item-text "></p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/varim-kofe-na-novom-blende/"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="2701">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/b13/dl719i0esl2l6idg49b3r6gyyd3brzgy.jpg" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/b13/dl719i0esl2l6idg49b3r6gyyd3brzgy.jpg" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/8db/w0v7d86uo3gz07gd8yq4c517tje35tje.jpg" type="image/webp">
+										<img alt="ПРОДУКЦИЯ ОТ БРЕНДА «ШОКОЛАДНИЦА»" src="/upload/iblock/8db/w0v7d86uo3gz07gd8yq4c517tje35tje.jpg">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title ">ПРОДУКЦИЯ ОТ БРЕНДА «ШОКОЛАДНИЦА»</span>
+									<p class="special-offer-block__item-text ">Шоколад, термокружки и фирменный зерновой кофе от любимого бренда</p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/produktsiya-ot-brenda-shokoladnitsa"
+																				></a>
+                                 							</div>
+						</div>
+											<div class="swiper-slide" >
+							<div class="special-offer-block__item" slide-id="3545">
+								<div class="special-offer-block__item-bg">
+									<picture>
+										<source srcset="/upload/iblock/955/0mg1pj16bm61luty3iythbtmr3mq423b.jpg" type="image/webp" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/955/0mg1pj16bm61luty3iythbtmr3mq423b.jpg" media="(max-width:1023px)">
+										<source srcset="/upload/iblock/9bc/s06v1p3digr7l3vy1g9e59luq95y9n4w.jpg" type="image/webp">
+										<img alt="КОФЕ В ПОДАРОК" src="/upload/iblock/9bc/s06v1p3digr7l3vy1g9e59luq95y9n4w.jpg">
+									</picture>
+								</div>
+								<div class="special-offer-block__item-content">
+									<span class="special-offer-block__item-title special-offer-block__item-title--light">КОФЕ В ПОДАРОК</span>
+									<p class="special-offer-block__item-text special-offer-block__item-text--light">Получи чашечку любимого напитка в подарок</p>
+																	</div>
+																		<a 
+										class="stretched-link" 
+										href="/promotions/kofe-v-podarok/"
+																				></a>
+                                 							</div>
+						</div>
+									</div>  
+			</div>
+					<div class="swiper-pagination"></div>
+			<div class="carousel-button-next carousel-button"></div>
+			<div class="carousel-button-prev carousel-button"></div>
+				</div>
+	</div>
+</div>
+
+
+<script>
+
+let getSlide = $('.swiper-wrapper').attr('data-slide');
+let isLoop = getSlide != 1 ? true : false;
+
+const carousel = new Swiper('.swiper-carousel', {
+	slidesPerView: "auto",
+    centeredSlides: true,
+    loop: isLoop,
+    autoplay: {
+    	delay: 5000,
+    	disableOnInteraction: false,
+    	stopOnLastSlide: true,
+    },
+	
+    navigation: {
+    	nextEl: isLoop ? ".carousel-button-next" : "",
+    	prevEl: isLoop ? ".carousel-button-prev" : "",
+    },
+    pagination: {
+		el: ".swiper-pagination",
+    	clickable: true,
+    	renderBullet: function (index, className) {
+    		return '<div class=\"' + className + '\"></div>';
+    	}
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 8,
+      },
+      1024: {
+        spaceBetween: 50,
+      }
+    }
+});
+</script>	
+	
+	
+	
+
+   <div id="catalog">
+      <div class="load__catalog">
+         <div class="load__catalog-menu skeleton"></div>
+         <div class="load__catalog-catname skeleton"></div>
+         <div class="load__catalog-items">
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+         </div>
+         <div class="load__catalog-catname skeleton"></div>
+         <div class="load__catalog-items">
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+            <div class="load__catalog-item skeleton"></div>
+         </div>
+      </div>
+   </div>
+
+
+   <script type="text/javascript">
+      $(function () {
+         sendData('catalog', {}).then(function (data) {
+               $('#catalog').html(data);
+
+               sendData('cart.info');
+               
+               if (category = location.hash.match(new RegExp('c(.*)'))) {
+               $('html').animate({
+                  scrollTop: $("[id='"+category[0]+"']").offset().top - 150
+               }, 500);
+               }
+               
+           }).catch(function (err) {
+            
+           });
+      });
+   </script>
+
+</div>
+
+      </div>
+
+      
+            <div class="footer-wrapper">
+         <footer class="footer">
+            <a class="footer__logo" href="/">
+               <picture>
+                  <img alt="" src="/local/templates/shoko/images/logo-footer.png">
+               </picture>
+            </a>
+            <div class="footer__content">
+               <div class="footer__menu">
+                                    <div class="footer__column">
+                     <div class="footer__column-header">Шоколадница</div>
+                     <div class="footer__column-content">
+                        <ul>
+                                                         <li><a class="footer__column-point " href="/about/">О компании</a></li>
+                                                         <li><a class="footer__column-point " href="/career/">Карьера</a></li>
+                                                         <li><a class="footer__column-point " href="/business/">Для бизнеса</a></li>
+                                                         <li><a class="footer__column-point " href="/franchising/">Франчайзинг</a></li>
+                                                   </ul>
+                     </div>
+                  </div>
+                                    <div class="footer__column">
+                     <div class="footer__column-header">Клиентам</div>
+                     <div class="footer__column-content">
+                        <ul>
+                                                         <li><a class="footer__column-point " href="/promotions/">Акции</a></li>
+                                                         <li><a class="footer__column-point " href="/bonuses/">Бонусы</a></li>
+                                                         <li><a class="footer__column-point excelicon" href="/upload/pricelist/shoko/Прейскурант.xls?1726056410">Прейскурант</a></li>
+                                                   </ul>
+                     </div>
+                  </div>
+                                    <div class="footer__column">
+                     <div class="footer__column-header">Помощь</div>
+                     <div class="footer__column-content">
+                        <ul>
+                                                         <li><a class="footer__column-point " href="/deliveryarea/">Зоны и условия доставки</a></li>
+                                                         <li><a class="footer__column-point " href="/restaurants/">Рестораны</a></li>
+                                                         <li><a class="footer__column-point " href="/contacts/">Контакты</a></li>
+                                                   </ul>
+                     </div>
+                  </div>
+                  
+               </div>
+               <div class="footer__aside">
+                                    <div class="footer__social">
+                     <div class="footer__social-title">Мы в социальных сетях</div>
+                     <div class="social">
+                                                <a class="social__item" target="_blank" href="https://t.me/shokomoscow">
+                           <div class="social__item-icon">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.22 5.093L4.432 10.795c-1.009.405-1.003.968-.183 1.219l3.686 1.151 1.412 4.326c.171.473.087.661.584.661.384 0 .553-.175.768-.384.136-.132.942-.918 1.844-1.793l3.835 2.834c.706.39 1.216.188 1.391-.655L20.29 6.288c.257-1.033-.395-1.502-1.07-1.195zM8.514 12.9l8.312-5.243c.415-.253.796-.117.483.16l-7.117 6.422-.276 2.955L8.515 12.9z" fill="#fff"></path>
+                              </svg>
+                           </div>
+                        </a>
+                                                                        <a class="social__item" target="_blank" href="https://vk.com/shokoru">
+                           <div class="social__item-icon">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M12.889 17c-5.912 0-9.5-3.757-9.64-10h2.994c.094 4.586 2.372 6.532 4.119 6.93V7h2.87v3.956c1.684-.17 3.447-1.97 4.04-3.956h2.823c-.452 2.443-2.37 4.243-3.728 4.986 1.357.6 3.54 2.171 4.383 5.013h-3.103c-.656-1.899-2.262-3.37-4.414-3.571V17h-.344z" fill="#fff"></path>
+                              </svg>
+                           </div>
+                        </a>
+                                                                        <a class="social__item" target="_blank" href="https://ok.ru/shokoru">
+                           <div class="social__item-icon">
+                              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.98a1.847 1.847 0 00-1.845 1.844 1.846 1.846 0 003.148 1.304c.346-.346.54-.815.541-1.304A1.847 1.847 0 0012 5.98zm0 6.298a4.46 4.46 0 01-4.455-4.454 4.46 4.46 0 014.454-4.455 4.459 4.459 0 014.456 4.455A4.459 4.459 0 0112 12.278zm-1.803 3.634A8.341 8.341 0 017.61 14.84 1.305 1.305 0 119 12.63a5.656 5.656 0 006 0 1.305 1.305 0 111.39 2.21c-.796.5-1.67.862-2.587 1.07l2.49 2.493a1.306 1.306 0 01-1.846 1.845L12 17.8l-2.449 2.448a1.306 1.306 0 01-1.845-1.845l2.49-2.491z" fill="#fff"></path>
+                              </svg>
+                           </div>
+                        </a>
+                                             </div>
+                  </div>
+                                                      <div class="footer__app">
+                     <div class="footer__app-title">Наше мобильное приложение</div>
+                     <div class="app">
+                                                <a class="app__item app__item-appstore" target="_blank" href="https://apps.apple.com/ru/app/%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D0%B8%D1%86%D0%B0-2-0/id1481463078">
+                           <img alt="приложение" src="/local/images/apps/app-1.svg">
+                        </a>
+                                                                        <a class="app__item app__item-googleplay" target="_blank" href="https://play.google.com/store/apps/details?id=ru.plazius.shokoladnica">
+                           <img alt="приложение" src="/local/images/apps/app-2.png">
+                        </a>
+                                                                        <a class="app__item app__item-appgallery" target="_blank" href="https://appgallery.huawei.com.cn/app/C108323357">
+                           <img alt="приложение" src="/local/images/apps/Badge-Black-01.svg">
+                        </a>
+                                                                        <a class="app__item app__item-rustore" target="_blank" href="https://www.rustore.ru/catalog/app/ru.plazius.shokoladnica">
+                           <img alt="приложение" src="/local/images/apps/rustore.svg">
+                        </a>
+                                             </div>
+                  </div>
+                                 </div>
+            </div>
+            <div class="footer2__content">
+               <div class="footer__copy">
+                  Сеть кофеен «Шоколадница» 2024 ©               </div>
+               <div class="footer__yur">
+                                 </div>
+               <div class="footer__agreements">
+                  <a href="/agreement">Политика конфиденциальности</a>
+               </div>
+            </div>
+         </footer>
+      </div>
+
+      
+    </div>
+</div>
+
+
+<div class="modal">
+    <div class="popup__bg"></div>
+    <div class="map map-mobile"></div>
+    <div class="popup__w">
+        <div class="popup__container">
+            <div class="popup__content"></div>
+            <div class="popup__close_"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="loader">
+    <div class="loader__container">
+    </div>
+</div>
+
+
+   <div class="search-mbox search-b">
+      <div class="search-m__header">
+         <div class="search-m__header-back"></div>
+         <div class="search-m__header-title">Поиск</div>
+         <div style="width: 40px;"></div>
+      </div>
+
+      <div class="search-mbox__form">
+         <input class="search-box__input" type="text" name="" placeholder="Поиск"/>
+         <span class="search-box__input-remove"></span>
+      </div>
+
+      <div class="search-mbox__results">
+         <div class="search__results-header"></div>
+         <div class="search-mbox__results-body search-b__results-body">
+            <div class="search__results-content"></div>
+         </div>
+      </div>
+
+   </div>
+
+
+
+
+
+<script type="text/javascript">
+   setTimeout(
+      function(){
+         sendData('cart.info');
+      }, 
+   100);
+   //sendData('cart.info');
+</script>
+
+<div class="cookiespolicy">
+	<div class="cookiespolicy-content">
+		<div class="cookiespolicy-text">
+			Продолжая пользование настоящим сайтом, Вы выражаете свое согласие на обработку ваших файлов cookie.<br>
+			Вы можете отказаться от обработки файлов cookie, при этом функционал сайта в полном объеме вам будет недоступен
+		</div>
+		<div class="cookiespolicy-buttons">
+			<a class="btn-secondary-inv cookies-deny" data-result="0">Отказаться</a>
+			<a class="btn-primary-inv cookies-accept" data-result="1">Согласен</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>

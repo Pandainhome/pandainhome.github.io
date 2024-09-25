@@ -1,0 +1,571 @@
+ @import url('https://fonts.googleapis.com/css?family=CorsicaLX&display=swap');
+
+ body {
+     font-family: CorsicaLX,
+         Helvetica,
+         sans-serif;
+ }
+
+ p {
+     color: rgb(167, 170, 169);
+ }
+
+ .nav-link {
+     color: rgb(145, 153, 150);
+ }
+
+ .navbar-nav .nav-link.active {
+     color: rgb(179, 171, 171);
+ }
+
+ .carzina {
+     margin-top: -2px;
+     margin-left: -55px;
+ }
+
+ .navbar-brand img {
+     width: 150px;
+ }
+
+
+ .container,
+ .container-fluid {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+
+ .search {
+     display: flex;
+     align-items: center;
+     background-color: #f0eaea;
+     border-radius: 20px;
+     padding: 5px 10px;
+     width: 200px;
+ }
+
+ .search-icon {
+     margin-right: 3px;
+ }
+
+ .search-field {
+     border: none;
+     background: none;
+     width: calc(100% - 25px);
+     padding: 5px;
+     color: rgb(37, 37, 37);
+     background-color: #f0eaea;
+ }
+
+ .carzini {
+     margin-left: 1px;
+     color: #999191;
+ }
+
+ .carzi {
+     margin-left: -10px;
+ }
+
+ .custom-header__map-text-choose {
+     color: #7e2832;
+ }
+
+ .search-field:focus {
+     outline: none;
+ }
+
+ hr {
+     width: 98%;
+     margin: auto;
+     margin-top: -25px;
+     color: #d4cece;
+ }
+
+ .navbar-nav {
+     text-align: center;
+ }
+
+ .gradient-container {
+     width: 100%;
+     height: 100px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .solid-line {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 2px;
+     background-color: rgb(238, 232, 232);
+ }
+
+ .gradient-line {
+     width: 100%;
+     height: 15%;
+     background: linear-gradient(180deg,
+             rgb(223, 220, 220) 0%,
+             rgb(240, 237, 237) 40%,
+             rgba(244, 245, 239, 1) 100%);
+     filter: blur(8px);
+ }
+
+ .carousel-indicators [data-bs-target] {
+     width: 10px;
+     height: 10px;
+     margin: 7px;
+     padding: -1px;
+     border-radius: 50%;
+     background-color: #fffffff6;
+ }
+
+ .carousel-indicators .active {
+     background-color: #812c2c;
+ }
+
+ .rounded-img {
+     border-radius: 15px;
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next {
+     width: 31px;
+     height: 31px;
+     border-radius: 50%;
+     background-color: transparent;
+     color: transparent;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 1;
+     transition: all 0.3s ease;
+ }
+
+ .carousel-control-prev:hover,
+ .carousel-control-next:hover,
+ .carousel-item-next.active,
+ .carousel-item-prev.active {
+     background-color: #ffffffe8;
+     color: #f0ebeb;
+ }
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     display: none;
+ }
+
+ .carousel-control-prev:hover .carousel-control-prev-icon,
+ .carousel-control-next:hover .carousel-control-next-icon,
+ .carousel-item-next.active .carousel-control-next-icon,
+ .carousel-item-prev.active .carousel-control-prev-icon {
+     display: block;
+ }
+
+ .carousel-control-prev {
+     margin-left: -15px;
+     color: #0e0d0d;
+ }
+
+ .carousel-control-next {
+     margin-right: -15px;
+ }
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     width: 15px;
+     height: 15px;
+     background-size: contain;
+ }
+
+ .carousel-control-prev-icon {
+     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+ }
+
+ .carousel-control-next-icon {
+     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+ }
+
+ .nav-item {
+     display: flex;
+     align-items: center;
+ }
+
+ .chevron-icon {
+     margin-left: 1px;
+     cursor: pointer;
+     color: #757575;
+ }
+
+ .menu-title {
+     text-align: left;
+     /* Выравниваем текст по левому краю */
+
+     margin-top: 70px;
+     /* Отступ сверху */
+ }
+
+ .menu-title h2 {
+     font-weight: bold;
+     /* Жирный шрифт */
+     color: #470c13;
+     /* Цвет текста */
+     margin-bottom: 30px;
+     font-size: 30px;
+ }
+
+
+
+
+
+ .card {
+     width: 300px;
+     /* Устанавливаем фиксированную ширину */
+
+     /* Устанавливаем фиксированную высоту */
+     border: none;
+     /* Граница для визуализации контейнеров */
+     border-radius: 0px;
+     display: flex;
+     flex-direction: column;
+     min-height: 100%;
+     justify-content: space-between;
+     ;
+     overflow: hidden;
+     /* Скрываем переполнение текста */
+     text-align: left;
+     padding: 5px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     min-height: 100%;
+ }
+
+ .card-img-top {
+     width: 100%;
+     height: auto;
+     margin-bottom: 4px;
+ }
+
+ .card-body {
+
+     /* This allows the card body to take up all available space */
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+
+     justify-content: space-between;
+ }
+
+ .card-title {
+     height: 40px;
+     text-align: left;
+     flex-grow: 0;
+     font-size: 16px;
+     font-weight: 600;
+     /* Толщина шрифта заголовка */
+     margin-bottom: 4px;
+     /* Нижний отступ для разделения заголовка и текста */
+
+ }
+
+ .card-text {
+     height: 60px;
+     /* This allows the card text to take up remaining space */
+     color: #8f8a8a;
+     overflow: hidden;
+     text-align: left;
+     text-overflow: ellipsis;
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     white-space: normal;
+     margin-bottom: 10px;
+     font-size: 14px;
+ }
+
+ .card-footer {
+     margin-top: auto;
+     align-items: center;
+     display: flex;
+     justify-content: space-between;
+     border: none;
+     background-color: transparent;
+     margin-top: 10px;
+     text-align: left;
+
+
+     /* Отступ для пространства между кнопкой и другими элементами */
+
+
+ }
+
+
+ .card-price {
+     text-align: left;
+     border: none;
+     font-size: 20px;
+     /* Размер шрифта цены */
+     font-weight: bold;
+     /* Толщина шрифта цены */
+     color: #331818;
+     /* Цвет текста цены */
+     margin: 0;
+     margin-top: 10px;
+     justify-content: flex-end;
+ }
+
+
+ .card-weight {
+     font-weight: 500;
+     font-size: 15px;
+     text-align: left;
+     /* Добавляем немного места между весом и остальными элементами */
+     color: #8f8a8a;
+     margin: 0;
+     margin-top: -25px;
+     margin-left: 15px;
+
+ }
+
+ .btn {
+     align-self: flex-end;
+ }
+
+ .btn-custom {
+     margin-top: 25px;
+     background-color: rgb(126, 40, 50);
+     color: white;
+     border: none;
+     border-radius: 50px;
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     align-self: flex-end;
+ }
+
+ .btn-custom:hover {
+
+     background-color: rgb(100, 30, 40);
+ }
+
+
+ .btn-custom:focus,
+ .btn-custom:active {
+     background-color: rgb(126, 40, 50);
+     /* Оставляет исходный цвет кнопки при нажатии */
+     color: white;
+     /* Устанавливает цвет текста */
+     box-shadow: none;
+     /* Убирает тень, которая может появиться при фокусе */
+     outline: none;
+     /* Убирает обводку при фокусе */
+
+ }
+
+
+ .footer-text {
+
+     color: #6d6b6b;
+     text-align: left;
+     margin-bottom: 10px;
+     font-size: 15px;
+     margin: 5px 0;
+
+ }
+
+ footer {
+     padding: 10px 0;
+     /* Отступ сверху и снизу */
+     background-color: rgb(100, 30, 40);
+
+ }
+
+ img {
+     max-width: 100%;
+     /* Чтобы изображение не выходило за пределы контейнера */
+     height: auto;
+     /* Сохраняем пропорции изображения */
+     display: block;
+     /* Убираем возможные отступы */
+     border-style: none;
+ }
+
+ .container-fluid {
+     padding: 0 25px;
+     /* Отступы по бокам */
+ }
+
+
+
+ .logo {
+     max-width: 180px;
+     margin-bottom: 20px;
+     margin-right: 190px;
+
+ }
+
+
+ .foto,
+ .goo,
+ .app,
+ .rustore {
+
+     margin-left: - 10px;
+
+     /* Автоматическая ширина для сохранения пропорций */
+     max-width: 100%;
+     /* Ограничиваем ширину */
+     height: auto;
+     /* Высота автоматически подстраивается */
+     display: inline-block;
+     /* Вытягиваем изображения по горизонтали */
+     margin: 5px;
+     /* Убираем ненужные отступы */
+ }
+
+ .pres {
+     max-width: 100%;
+     /* Ограничение ширины изображения */
+     height: auto;
+     /* Сохранение пропорций изображения */
+     width: 25px;
+     margin-top: -27px;
+     margin-left: 90px;
+
+ }
+
+
+ .fot {
+     color: #a8a4a4;
+     text-align: left;
+     font-size: 15px;
+     margin-top: 60px;
+     margin-bottom: 15px;
+
+ }
+
+
+ .fotor {
+     color: #a8a4a4;
+     margin-top: 40px;
+
+
+ }
+
+ .zu {
+
+     display: flex;
+     justify-content: start;
+     width: 44px;
+     margin-top: 5px;
+     margin-right: 10px;
+ }
+
+
+  .mas {
+max-width: 100%;
+    /* Ограничиваем ширину */
+    height: auto;
+    /* Высота автоматически подстраивается */
+
+      width: 155px;
+      /* Фиксированная ширина для больших экранов */
+      margin: 15px auto -35px;
+      /* Центрирование по горизонтали и отступ снизу */
+      margin-left: 265px;
+  }
+
+ .lud {
+     margin-left: -50px;
+
+ }
+
+
+
+
+
+ .shoko {
+     width: 161px;
+     height: 35px;
+     margin-right: 130px;
+ }
+
+
+
+
+
+
+
+ .hrr {
+
+     width: 70%;
+     margin: auto;
+     margin-top: 35px;
+     background-color: #f0eaea;
+     align-items: center;
+
+ }
+
+ .se {
+    display: block;
+     font-size: 12px;
+    margin-left: 285px;
+     margin-top: 10px;
+    
+
+
+
+ }
+
+
+
+ .we {
+     font-size: 12px;
+     text-align: end;
+     margin-top: -30px;
+     margin-right: 290px;
+     color: #c1bfc0;
+ }
+
+
+
+
+
+ @media (max-width: 768px) {
+     footer .container .row {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     footer .container .col-lg-3,
+     footer .container .col-md-3 {
+         align-items: center;
+         text-align: center;
+     }
+
+     footer img {
+         max-width: 80px;
+     }
+
+     .we {
+         text-align: center;
+         margin-right: 0;
+         margin-top: 10px;
+     }
+
+
+     .lud img {
+         width: 50px;
+         /* или другое значение для мобильных устройств */
+     }
+
+     .log {
+         max-width: 80px;
+         /* Размер для мобильных устройств */
+
+     }
+
+
+
+
+ }

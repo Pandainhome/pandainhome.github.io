@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/styles/mycss.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Шоколадница</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-wait">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <img src="source/files/logo.png" alt="...">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Изменить бренд
+                                    <i class="fas fa-chevron-down chevron-icon" onclick="toggleChevron(this)"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Москва</a>
+                            </li>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </ul>
+                        <div class="search">
+                            <img style="width: 20px;" src="https://shoko.ru/local/images/search3.svg?1" alt="#"
+                                class="search-icon">
+                            <input type="text" name="text" class="search-field" placeholder="Поиск">
+                        </div>
+                        <div class="custom-header__map order-type">
+                            <a class="custom-header__map-icon" href="#">
+                                <picture>
+                                    <img style="width: 38px; margin-inline: 1em;"
+                                        src="source/files/map-icon.svg" alt="Способ получения">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="custom-header__map-text"> Доставка или Заказ с собой
+                            <div class="custom-header__map-text-choose" style="margin-top: -1px;">
+                                Выберите способ получения
+                            </div>
+                        </div>
+                        <div class="cabinet">
+                            <a class="cabinett" href="#">
+                                <picture>
+                                    <img style="width: 38px; margin-inline: 3em;"
+                                        src="source/files/lk-icon.svg" alt="Личный кабинет">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="carzina">
+                            <a class="carzinaa" href="#">
+                                <picture>
+                                    <img style="width: 38px; margin-inline: 1em;"
+                                        src="source/files/cart-icon.svg" alt="Корзина">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="carzi"> 0 ₽
+                            <div class="carzini" style="margin-top: -1px;">
+                                <nobr>0 шт</nobr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <hr>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container" style="margin-top: 0px;">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Меню доставки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Рестораны</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Акции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Бонусы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Для бизнеса</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Франчайзинг</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Вакансии</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Блог</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="gradient-container">
+            <div class="solid-line"></div>
+            <div class="gradient-line"></div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container carousel-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                        aria-label="Slide 10"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="source/images/7eoclc8zvezr2214qi48m5o6hh8suo6n.png" class="d-block w-100 rounded-img"
+                            alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/z9cigr9agw0ozttk2yf7eocs4e9t9f43.jpg" class="d-block w-100 rounded-img"
+                            alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/lo9daqslx6lt76lsvxaq5zwzx4sht5y5.png" class="d-block w-100 rounded-img"
+                            alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/rxfh912zrg133t8qvi5pqax0ikjcjij2.png" class="d-block w-100 rounded-img"
+                            alt="Slide 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/y72ufvg9xho7izp1dpild6o5t7qcl43u.png" class="d-block w-100 rounded-img"
+                            alt="Slide 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/Снимок экрана 2024-07-17 180235.png" class="d-block w-100 rounded-img"
+                            alt="Slide 6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/a5f6omuwewdus24538d6eybpnfvzos37.png" class="d-block w-100 rounded-img"
+                            alt="Slide 7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/22v5tdaguttc878bv0exq446r8pqh27o.jpg" class="d-block w-100 rounded-img"
+                            alt="Slide 8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/Снимок экрана 2024-07-17 182741.png" class="d-block w-100 rounded-img"
+                            alt="Slide 9">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="source/images/Снимок экрана 2024-07-17 182131.png" class="d-block w-100 rounded-img"
+                            alt="Slide 10">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container carousel-container">
+            <div class="menu-title">
+                <h2>ЛЕТНЕЕ МЕНЮ</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid my-4">
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Карточка 1 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/q1g3o19v16dtshwtn4v3i1tqlw36ceo1.webp" class="card-img-top"
+                                alt="Салат с брискетом и брусничным соусом">
+                            <div class="card-body">
+                                <h5 class="card-title">Салат с брискетом и брусничным соусом</h5>
+                                <p class="card-text">Говяжья грудинка копченая, айсберг, рукола, базилик, томаты черри,
+                                    соус
+                                    брусничный, ягодный</p>
+                                <div class="card-footer">
+                                    <div class="card-price">590 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">140 г</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/zz3tzslwr2qhhgusaa2zxtcbjkk9fwbo.webp" class="card-img-top"
+                                alt="Салат со страчателлой и персиковым чатни">
+                            <div class="card-body">
+                                <h5 class="card-title">Салат со страчателлой и персиковым чатни</h5>
+                                <p class="card-text">Хамон, чатни из персиков, страчателла, айсберг, рукола, грецкие
+                                    орехи, соус
+                                    горчично-медовый (горчица, чеснок, мед, соевый соус и ворчестер соус)</p>
+                                <div class="card-footer">
+                                    <div class="card-price">590 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">140 г</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/ap7tbqi0fp94lgn4q2bds4b3i6mrh8p2.webp" class="card-img-top"
+                                alt="Гаспачо с клубникой">
+                            <div class="card-body">
+                                <h5 class="card-title">Гаспачо с клубникой</h5>
+                                <p class="card-text">Клубника, помидоры, базилик, огурцы,
+                                    масло оливковое, мята</p>
+                                <div class="card-footer">
+                                    <div class="card-price">450 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">200 г</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/rasu7om2ll02ybotntiqg4nysb3emk4t.webp" class="card-img-top"
+                                alt="Джамбалайя с креветками">
+                            <div class="card-body">
+                                <h5 class="card-title">Джамбалайя с креветками</h5>
+                                <p class="card-text">Креветки тигровые, перец болгарский, помидоры, колбаски говяжьи,
+                                    кукуруза,
+                                    горох, чеснок, лук репчатый, паста томатная, кинза</p>
+                                <div class="card-footer">
+                                    <div class="card-price">690 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">270 г</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 5 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/gvuk9fzye9vi54tas9vnx6bz8o1xaz02.webp" class="card-img-top"
+                                alt="Смузи «Яблоко-Базилик»">
+                            <div class="card-body">
+                                <h5 class="card-title">Смузи «Яблоко-Базилик»</h5>
+                                <p class="card-text">Яблоко, банан, базилик, яблочный сок, сахарный сироп собственного
+                                    приготовления, сироп лайма</p>
+                                <div class="card-footer">
+                                    <div class="card-price">390 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">300 мл</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 6 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/oyyat84hpdhm6lvzruntm63gtaiy98ec.webp" class="card-img-top"
+                                alt="Смузи «Земляника-Апельсин»">
+                            <div class="card-body">
+                                <h5 class="card-title">Смузи «Земляника-Апельсин»</h5>
+                                <p class="card-text">Свежевыжатый апельсиновый сок, клубника, банан, земляничный сироп
+                                </p>
+                                <div class="card-footer">
+                                    <div class="card-price">390 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">300 мл</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-title">
+                    <h2>ОСВЕЖАЮЩИЕ НАПИТКИ</h2>
+                </div>
+
+                <div class="row">
+                    <!-- Напиток 1 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/lanua0ar05ran4zk2u229q1ax51kllj4.webp" class="card-img-top"
+                                alt="Бабл-ти «Гибискус-Личи»">
+                            <div class="card-body">
+                                <h5 class="card-title">Бабл-ти «Гибискус-Личи»</h5>
+                                <p class="card-text">Холодный чай каркаде с джус боллами личи и лаймовым послевкусием.
+                                    Каркаде,
+                                    джус боллы личи, лаймовый сироп, сахар</p>
+                                <div class="card-footer">
+                                    <div class="card-price">370 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">450 мл</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Напиток 2 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/yuv475apg40hgfbsqx2friu3bh8yqkz6.webp" class="card-img-top"
+                                alt="Лимонад «Ананас-улун»">
+                            <div class="card-body">
+                                <h5 class="card-title">Лимонад «Ананас-улун»</h5>
+                                <p class="card-text">Чайный лимонад со вкусом ананаса. Молочный улун, ананасовый сироп,
+                                    лимон,
+                                    вода газированная</p>
+                                <div class="card-footer">
+                                    <div class="card-price">350 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">450 мл</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Напиток 3 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/a41z43ijwn4x9tkxps42xrjw2vaj9joz.webp" class="card-img-top"
+                                alt="Колд брю">
+                            <div class="card-body">
+                                <h5 class="card-title">Колд брю</h5>
+                                <p class="card-text">Классический кофе холодного заваривания, приготовлен на основе
+                                    Бразильской
+                                    Арабики</p>
+                                <div class="card-footer">
+                                    <div class="card-price">330 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">300 мл</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Напиток 4 -->
+                    <div class="col-lg-3 col-md-6 mt-4">
+                        <div class="card">
+                            <img src="source/images/y9n3febiv549241pnenliqlnnprqw4cz.webp" class="card-img-top"
+                                alt="Колд брю сливочный">
+                            <div class="card-body">
+                                <h5 class="card-title">Колд брю сливочный</h5>
+                                <p class="card-text">Классический кофе холодного заваривания, со сливками, приготовлен
+                                    на основе
+                                    Бразильской Арабики</p>
+                                <div class="card-footer">
+                                    <div class="card-price">330 ₽</div>
+                                    <a href="#" class="btn btn-custom">Добавить</a>
+                                </div>
+                                <p class="card-weight">300 мл</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-4">
+        <div class="container-fluid">
+         
+            <img  class="mas" src="source/files/logo-footer.png" alt="Логотип">
+      
+            <div class="container text-center">
+                <div class="row">
+                    <section class="col-lg-3 col-md-3">
+                        <h4 class="fot">Шоколадница</h4>
+                        <nav>
+                            <p class="footer-text">O компании</p>
+                            <p class="footer-text">Карьера</p>
+                            <p class="footer-text">Для бизнеса</p>
+                            <p class="footer-text">Франчайзинг</p>
+                        </nav>
+                    </section>
+                    <section class="col-lg-3 col-md-3">
+                        <h4 class="fot">Клиентам</h4>
+                        <nav>
+                            <p class="footer-text">Акции</p>
+                            <p class="footer-text">Бонусы</p>
+                            <p class="footer-text">Прейскурант</p>
+                        </nav>
+                        <img class="pres" src="source/files/icons8-microsoft-excel-48.png" alt="Прейскурант в Excel">
+                    </section>
+                    <section class="col-lg-3 col-md-3">
+                        <h4 class="fot">Помощь</h4>
+                        <nav>
+                            <p class="footer-text">Зоны и условия доставки</p>
+                            <p class="footer-text">Рестораны</p>
+                            <p class="footer-text">Контакты</p>
+                        </nav>
+                    </section>
+                    <section class="col-lg-3 col-md-3">
+                        <h4 class="fot">Мы в социальных сетях</h4>
+                        <div class="zu">
+                            <img style="margin: 5px;" src="source/files/icons8-телеграмма-app-48.png" alt="Telegram">
+                            <img style="margin: 5px;" src="source/files/icons8-vk-48(1).png" alt="Vk">
+                            <img style="margin: 5px;" src="source/files/icons8-odnoklassniki-circled-48.png"
+                                alt="Одноклассники">
+                        </div>
+                        <h4 class="fot">Наше мобильное приложение</h4>
+                        <div class=" lud">
+                            <img class="foto" src="source/files/app-1.svg" alt="App Store">
+                            <img class="goo" style="width: 116px;" src="source/files/app-2.png" alt="Google Play">
+                            <img class="app" style="width: 116px;" src="source/images/Badge-Black-01.svg"
+                                alt="App Gallery">
+                            <img class="rustore" style="width: 116px;" src="source/images/rustore.svg" alt="Rustore">
+                        </div>
+
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="hrr">
+            <hr>
+        </div>
+        <div class="se">
+            <p>Сеть кофеен «Шоколадница» 2024 ©</p>
+            <p class="we">Политика конфиденциальности</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybBbgqFwUc5lOz0cUmK7CKn1XNtJEnYh2CVR7G6ZvQG4GJc6T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script>
+        function toggleChevron(icon) {
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+    </script>
+</body>
+
+</html>
