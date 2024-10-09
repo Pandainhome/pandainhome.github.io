@@ -14,128 +14,148 @@
     <link rel="manifest" href="source/files/favicon.io//site.webmanifest">
     
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      
+  
     <title> «Шоколад»</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-wait">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/">
-                        <img src="source/files/logo.png" alt="...">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"> Изменить бренд
-                                    <i class="fas fa-chevron-down chevron-icon" onclick="toggleChevron(this)"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Москва</a>
-                            </li>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-wait">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="source/files/logo.png" alt="...">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Изменить бренд
 
+                                <i class="fas fa-chevron-down chevron-icon" style="margin: 7px;"      onclick="toggleChevron(this)"></i>
+                            </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                                <img class="dropdown-item" src="source/files/favicon.io/android-chrome-192x192.png">
+                                <li><a class="choose__item-nime" href="https://pandaindahome.io/"> Шоколад </a></li>
+                                <p class="choose__item-description " href="https://pandaindahome.io/">Завтраки и кофе</p>
+
+                                <img class="dropdown-item"   src="source/files/logo-min-eazzy (1).png"> 
+                                <li><a class="choose__item-nime" href="#"> Pizza & Gelato </a></li> 
+                                <p class="choose__item-description "  href="#"> Пицца и джелато</p>
+
+                                <img class="dropdown-item" src="source/files/wasabi.png">
+                                <li><a class="choose__item-nime" href="#">Wasabi </a></li>
+                                <p class="choose__item-description " href="#">Японская кухня</p>
+                             
+                                <li><a class="dropdown-item" href="https://vabisabi.ru/"></a></li>
+                                <li><a class="dropdown-item" href="https://ramennaya.ru/"></a></li>
+                                <li><a class="dropdown-item" href="https://monkeyexpress.ru/"></a></li>
+                                <li><a class="dropdown-item" href="https://eazzysushi.ru/"></a></li>
                             </ul>
-                        </ul>
-                        <div class="search">
-                            <img style="width: 20px;" src="source/files/loupe-rouge.png" alt="#" class="search-icon">
-                            <input type="text" name="text" class="search-field" placeholder="Поиск">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Москва</a>
+                        </li>
+                    </ul>
+                    <div class="search">
+                        <img style="width: 20px;" src="source/files/loupe-rouge.png" alt="#" class="search-icon">
+                        <input type="text" name="text" class="search-field" placeholder="Поиск">
+                    </div>
+                    <div class="custom-header__map order-type">
+                        <a class="custom-header__map-icon" href="#">
+                            <picture>
+                                <img style="width: 38px; margin-inline: 1em;" src="source/files/map-icon.svg"
+                                    alt="Способ получения">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="custom-header__map-text"> Доставка или Заказ с собой
+                        <div class="custom-header__map-text-choose" style="margin-top: -1px;">
+                            Выберите способ получения
                         </div>
-                        <div class="custom-header__map order-type">
-                            <a class="custom-header__map-icon" href="#">
-                                <picture>
-                                    <img style="width: 38px; margin-inline: 1em;" src="source/files/map-icon.svg"
-                                        alt="Способ получения">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="custom-header__map-text"> Доставка или Заказ с собой
-                            <div class="custom-header__map-text-choose" style="margin-top: -1px;">
-                                Выберите способ получения
-                            </div>
-                        </div>
-                        <div class="cabinet">
-                            <a class="cabinett" href="#">
-                                <picture>
-                                    <img style="width: 38px; margin-inline: 3em;" src="source/files/lk-icon.svg"
-                                        alt="Личный кабинет">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="carzina">
-                            <a class="carzinaa" href="#">
-                                <picture>
-                                    <img style="width: 38px; margin-inline: 1em;" src="source/files/cart-icon.svg"
-                                        alt="Корзина">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="carzi"> 0 ₽
-                            <div class="carzini" style="margin-top: -1px;">
-                                <nobr>0 шт</nobr>
-                            </div>
+                    </div>
+                    <div class="cabinet">
+                        <a class="cabinett" href="#">
+                            <picture>
+                                <img style="width: 38px; margin-inline: 3em;" src="source/files/lk-icon.svg"
+                                    alt="Личный кабинет">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="carzina">
+                        <a class="carzinaa" href="#">
+                            <picture>
+                                <img style="width: 38px; margin-inline: 1em;" src="source/files/cart-icon.svg"
+                                    alt="Корзина">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="carzi"> 0 ₽
+                        <div class="carzini" style="margin-top: -1px;">
+                            <nobr>0 шт</nobr>
                         </div>
                     </div>
                 </div>
-            </nav>
-            <hr>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container" style="margin-top: 0px;">
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Меню доставки</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Рестораны</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Акции</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Бонусы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Для бизнеса</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Франчайзинг</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">О компании</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Вакансии</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Блог</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+        </nav>
+        <hr>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" style="margin-top: 0px;">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Меню доставки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Рестораны</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Бонусы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Для бизнеса</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Франчайзинг</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Блог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-        <div class="gradient-container">
-            <div class="solid-line"></div>
-            <div class="gradient-line"></div>
-        </div>
-    </header>
+            </div>
+        </nav>
+    </div>
+    <div class="gradient-container">
+        <div class="solid-line"></div>
+        <div class="gradient-line"></div>
+    </div>
+</header>
+
+<!-- Подключение JavaScript для Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <section>
         <div class="container carousel-container">
@@ -515,6 +535,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
 
 </body>
 

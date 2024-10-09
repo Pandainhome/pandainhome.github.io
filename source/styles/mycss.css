@@ -307,7 +307,42 @@ img {
     margin-bottom: 20px;
     margin-right: 190px;
 }
+ /* ИЗМЕНИТЬ БРЕНД С ВЫПАДАЮЩИМ СПИСКОМ */
 
+ .dropdown-menu{
+    width: 200px;
+ }
+         .navbar .dropdown-toggle::after {
+             display: none;
+             /* Убирает треугольник */
+         }
+
+.choose__item-description{
+    font-size: 10px;
+    color: #6d6b6b;
+    margin-top: -5px;
+ 
+
+
+}
+
+.dropdown-item{
+float: left;
+    width: 60px;
+  
+ 
+ 
+
+}
+.choose__item-nime {
+    white-space: nowrap;
+    margin-top: -35px;
+text-align: center;
+    color: #331818;
+    text-decoration: none;
+    font-size: 12px;
+    
+} /* КОНЕЦ */
 .foto,
 .goo,
 .app,
