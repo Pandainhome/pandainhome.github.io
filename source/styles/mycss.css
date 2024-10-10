@@ -334,12 +334,12 @@ float: left;
  
 
 }
-.choose__item-nime {
+.choose__item-name {
+    text-decoration: none;
     white-space: nowrap;
     margin-top: -35px;
 text-align: center;
     color: #331818;
-    text-decoration: none;
     font-size: 12px;
     
 } /* КОНЕЦ */
