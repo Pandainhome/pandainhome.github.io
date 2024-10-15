@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=CorsicaLX&display=swap');
+@import url('https://fonts.googleapis.com/css?family=CorsicaLX&display=swap');
 
 body {
     font-family: CorsicaLX, Helvetica, sans-serif;
@@ -168,7 +168,6 @@ hr {
 }
 
 .card {
-    margin: 10px 0;
     width: 100%;
     max-width: 300px;
     border: none;
@@ -211,7 +210,7 @@ hr {
     text-align: left;
     text-overflow: ellipsis;
     display: -webkit-box;
- 
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     white-space: normal;
     margin-bottom: 10px;
@@ -413,8 +412,6 @@ text-align: center;
 
 .footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     /* Размещаем элементы по краям */
     width: 100%;
@@ -423,8 +420,6 @@ text-align: center;
     /* Максимальная ширина для центрирования */
     padding: 0 15px;
     /* Отступы по бокам */
-    flex-wrap: wrap; 
-    justify-content: center;
 }
 
 .se,
@@ -507,15 +502,11 @@ text-align: center;
 }
 
 .navbar-toggler {
-    display: block;
+    display: none;
     background: none;
     border: none;
     font-size: 24px
 
-}
-
-.navbar-collapse {
-    display: none; /* Скрыть навигацию по умолчанию */
 }
 
 
@@ -613,15 +604,6 @@ text-align: center;
 
     .navbar-brand img {
         width: 100px;
-    }
-
-    .fot {
-        margin-top: 20px;
-    }
-
-    .zu img,
-    .lud img {
-        width: 30px; /* Уменьшение размера иконок для мобильных устройств */
     }
 }
 
