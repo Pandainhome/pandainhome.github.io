@@ -642,6 +642,10 @@ footer .container .col-md-3 {
 }
 
 @media (max-width: 576px) {
+
+    .custom-header__map, .cabinet, .carzina, .carzi {
+        display: none; /* Скрыть элементы для мобильных устройств */
+    }
     .btn-custom {
         width: 100%;
         /* Полная ширина для кнопок */
@@ -657,6 +661,16 @@ footer .container .col-md-3 {
         /* Уменьшаем шрифт */
     }
 
+    .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search input {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .search-container {
         width: 100%;
         /* Полная ширина для поискового контейнера */
@@ -664,6 +678,7 @@ footer .container .col-md-3 {
 
     .navbar-collapse {
         display: none;
+        text-align: center;
     }
 
     .navbar-toggler {
@@ -683,7 +698,7 @@ footer .container .col-md-3 {
         display: block;
     }
     .navbar-brand img {
-        width: 80px;
+        width: 100px;
     }
 
     .card {
