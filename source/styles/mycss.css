@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=CorsicaLX&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=CorsicaLX&display=swap');
 
 body {
     font-family: CorsicaLX, Helvetica, sans-serif;
@@ -211,7 +211,7 @@ hr {
     text-align: left;
     text-overflow: ellipsis;
     display: -webkit-box;
-
+ 
     -webkit-box-orient: vertical;
     white-space: normal;
     margin-bottom: 10px;
@@ -287,7 +287,6 @@ hr {
 
 footer {
     width: 100%;
-    height: auto;
     padding: 10px 0;
     background-color: rgb(100, 30, 40);
     display: flex;
@@ -426,7 +425,6 @@ text-align: center;
     /* Отступы по бокам */
     flex-wrap: wrap; 
     justify-content: center;
-    height: auto;
 }
 
 .se,
@@ -520,20 +518,6 @@ text-align: center;
     display: none; /* Скрыть навигацию по умолчанию */
 }
 
-
-
-
-
-footer .container .row {
-    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
-}
-
-footer .container .col-lg-3,
-footer .container .col-md-3 {
-    flex: 1 1 100%; /* Каждый элемент занимает 100% ширины на маленьких экранах */
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* Адаптивные стили */
 @media (max-width: 1200px) {
@@ -642,10 +626,6 @@ footer .container .col-md-3 {
 }
 
 @media (max-width: 576px) {
-
-    .custom-header__map, .cabinet, .carzina, .carzi {
-        display: none; /* Скрыть элементы для мобильных устройств */
-    }
     .btn-custom {
         width: 100%;
         /* Полная ширина для кнопок */
@@ -661,16 +641,6 @@ footer .container .col-md-3 {
         /* Уменьшаем шрифт */
     }
 
-    .search {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .search input {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     .search-container {
         width: 100%;
         /* Полная ширина для поискового контейнера */
@@ -678,7 +648,6 @@ footer .container .col-md-3 {
 
     .navbar-collapse {
         display: none;
-        text-align: center;
     }
 
     .navbar-toggler {
@@ -698,7 +667,7 @@ footer .container .col-md-3 {
         display: block;
     }
     .navbar-brand img {
-        width: 100px;
+        width: 80px;
     }
 
     .card {
