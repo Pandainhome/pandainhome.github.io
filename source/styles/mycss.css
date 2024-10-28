@@ -126,7 +126,9 @@ hr {
     width: 10px;
     height: 10px;
     margin: 7px;
+
     border-radius: 50%;
+
     background-color: #fffffff6;
 }
 
@@ -140,7 +142,7 @@ hr {
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 31px;
+    width: 30px;
     height: 31px;
     border-radius: 50%;
     background-color: transparent;
@@ -252,15 +254,14 @@ hr {
 }
 
 .card-weight {
+    
     width: 100%;
-
     font-weight: 500;
     font-size: 15px;
     text-align: left;
     color: #8f8a8a;
  margin-left: 15px;
 margin-top: -23px;  
-
 }
 
 .btn {
@@ -317,6 +318,7 @@ img {
 .container-fluid {
     padding: 0 25px;
 }
+
 
 .logo {
     max-width: 180px;
@@ -475,15 +477,17 @@ text-align: center;
 
 .search-container {
     display: flex;
-    align-items: center;
+
     background-color: #ffffff;
     border-radius: 20px;
     padding: 10px 10px;
     width: 352px;
     height: 44px;
+    margin-left: 20px;
     cursor: pointer;
     border: 1px solid #c9c5c5;
     font-size: 16px;
+   
 }
 
 .search-icon {
@@ -526,6 +530,26 @@ text-align: center;
 
 /* Адаптивные стили */
 @media (max-width: 1200px) {
+
+    .carousel-indicators [data-bs-target]{
+        display: none;
+    }
+    .card-price{
+        white-space: nowrap;
+       
+    }
+   .btn-custom{
+    width: 100%;
+   }
+   .card-weight{
+    white-space: nowrap;
+   }
+
+.custom-header__map-text-choose{
+    white-space: nowrap;
+}
+
+
     .card {
         width: 90%;
         /* Уменьшаем ширину карточки */
@@ -543,6 +567,9 @@ text-align: center;
 }
 
 @media (max-width: 992px) {
+    .carousel-indicators [data-bs-target]{
+        display: none;
+    }
     .navbar-nav {
         flex-direction: column;
         /* Вертикальная ориентация для навигации */
@@ -570,13 +597,16 @@ text-align: center;
     .navbar-toggler {
         display: block;
     }
-
-     
-}
+  
 
 @media (max-width: 768px) {
-    
-
+    .carousel-indicators [data-bs-target]{
+        display: none;
+    }
+    .card {
+        width: 100%;
+        /* Полная ширина для карточки */
+    }
     footer {
         flex-direction: column;
         align-items: center;
@@ -623,6 +653,7 @@ text-align: center;
 
     .navbar-brand img {
         width: 100px;
+         font-size: 18px;
     }
     .search-container {
         width: 100%;
@@ -646,6 +677,10 @@ text-align: center;
 }
 
 @media (max-width: 576px) {
+
+    .carousel-indicators [data-bs-target]{
+        display: none;
+    }
     .btn-custom {
         width: 100%;
         /* Полная ширина для кнопок */
@@ -705,5 +740,13 @@ text-align: center;
 
     .footer-content {
         text-align: center;
+    }
+
+    footer img {
+        max-width: 60px; /* Уменьшите размер на мобильных устройствах */
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
     }
 }
