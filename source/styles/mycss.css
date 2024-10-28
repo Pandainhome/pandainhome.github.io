@@ -27,6 +27,19 @@ p {
     width: 150px;
 }
 
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+
+    position: absolute; 
+    right: 10px; 
+    top: 15px;
+
+
+}
+
 .container,
 .container-fluid {
     padding: 0 15px;
@@ -240,13 +253,14 @@ hr {
 
 .card-weight {
     width: 100%;
-    max-width: 150px;
+
     font-weight: 500;
     font-size: 15px;
     text-align: left;
     color: #8f8a8a;
-    margin-top: -25px;
-    margin-left: 15px;
+ margin-left: 15px;
+margin-top: -23px;  
+
 }
 
 .btn {
@@ -556,9 +570,12 @@ text-align: center;
     .navbar-toggler {
         display: block;
     }
+
+     
 }
 
 @media (max-width: 768px) {
+    
 
     footer {
         flex-direction: column;
@@ -571,6 +588,7 @@ text-align: center;
     }
 
     .footer-logo {
+        width: 80%;
         margin-bottom: 20px;
     }
     footer .container .row {
@@ -588,6 +606,7 @@ text-align: center;
     .navbar-nav .nav-link,
     .footer-text {
         text-align: center;
+        align-items: center;
     }
 
     footer img {
@@ -604,6 +623,25 @@ text-align: center;
 
     .navbar-brand img {
         width: 100px;
+    }
+    .search-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btn-custom {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
